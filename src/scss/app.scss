@@ -59,11 +59,6 @@ footer {
   box-shadow: $base-shadow;
 }
 
-/* Classe générique utilisé pour masqué un élément */
-.hidden {
-  display: none;
-}
-
 
 /* L'app bar */
 .app-bar {
@@ -208,3 +203,8 @@ footer {
   border-radius: $border-radius;
   padding: spacing(2);
 } 
+
+/* Classe générique utilisé pour masqué un élément */
+.hidden {
+  display: none;
+}
