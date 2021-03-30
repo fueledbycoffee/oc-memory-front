@@ -11,6 +11,8 @@ npm i
 ## Développement
 
 ```bash
+set API_URL=[yourdbServer]
+
 npm run dev
 ```
 
@@ -18,6 +20,8 @@ npm run dev
 ## Production
 
 ```bash
+
+set API_URL=[yourdbServer]
 npm run build
 npm start
 ```
