@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Memory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Sion GENDERS">
+</head>
+
+<body>
+  <!-- L'ENTETE -->
+  <header>
+    <div class="app-bar">
+      <h1>MEMORY ?!</h1>
+      <!-- Un petit bouton caché qui permet de tricher et gagner d'un coup -->
+      <button class="hidden" id="cheat">CHEAT</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Le container de notre jeu -->
+    <div class="container">
+      <div class="game-box">
+
+        <!-- La progress bar -->
+        <div class="game-progress-holder">
+          <div class="game-progress-bar">
+          </div>
+          <span class="game-countdown">0:00</span>
+        </div>
+
+        <!-- C'est dans game-holder que seront générés les cartes -->
+        <div class="game-holder">
+        </div>
+
+        <!-- Le menu -->
+
+        <div class="game-menu">
+
+          <!-- Les messages de victoire et defaite (masqués par défaut) -->
+          <div id="lose-msg" class="game-status hidden">
+            Oups ! You'll do better next time
+          </div>
+          <div id="win-msg" class="game-status hidden">
+            BRAVO ! You won in <span id="game-time"></span>
+          </div>
+
+          <!-- L'input pour permettre au joueur de saisir son nom et le bouton pour commencer -->
+          <input id="player-name" class="base-input" placeholder="Enter playername..." />
+          <button id="start-btn" class="btn">START GAME</button>
+
+          <!-- Les highscores sous la forme d'un tableau -->
+          <div class="game-highscores">
+            <div class="game-highscores-title">
+              <h2>HIGHSCORES</h2>
+            </div>
+            <div class="game-highscores-content">
+              <table style="width: 100%;">
+                <tbody id="game-scores">
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Sion GENDERS
+  </footer>
+</body>
+</html>
